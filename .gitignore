@@ -1,0 +1,5 @@
+__pycache__
+Pipfile*
+*.egg*
+20_coding_test.md
+*.sh
