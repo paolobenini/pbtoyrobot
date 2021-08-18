@@ -3,7 +3,7 @@ from pathlib import Path
 
 setuptools.setup(
     name = "pbtoyrobot",
-    version = "1.0.8",
+    version = "1.0.9",
     author = "Paolo Benini",
     description = "A simple project for a toy robot",
     long_description = Path("README.md").read_text(),
