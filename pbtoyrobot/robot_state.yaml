@@ -1,4 +1,4 @@
 X: 0
-Y: 1
-F: WEST
-PlaceCommandExecuted: true
+Y: 0
+F: EAST
+PlaceCommandExecuted: false

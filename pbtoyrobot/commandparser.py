@@ -1,5 +1,4 @@
 from .input_output import PrintOutput
-from pathlib import Path
 
 class CommandInfo:
   def __init__(self, exists: bool, has_parameters: bool, output_file=None):

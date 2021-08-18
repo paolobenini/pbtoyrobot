@@ -4,3 +4,5 @@ Pipfile*
 20_coding_test.md
 *.sh
 *.txt
+build
+dist

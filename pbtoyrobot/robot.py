@@ -72,10 +72,10 @@ class Robot:
       "F": F,
       "PlaceCommandExecuted": self.__is_first_command_executed()
     }
-    path = Path(self.__state_file)
-    if path.exists():
+    full_path = Path(self.__state_file)
+    if full_path.exists():
       try:
-        with open(path, "w") as f:
+        with open(full_path, "w") as f:
           yaml.dump(state, f, sort_keys=False, default_flow_style=False)
       except:
         return PrintOutput.write_output(output="State file missing", output_file=self.__output_file)
@@ -86,7 +86,7 @@ class Robot:
         # Try backported to PY<37 `importlib_resources`.
         import importlib_resources as pkg_resources
       try:
-        with pkg_resources.path(__package__, self.__state_file) as path:
+        with pkg_resources.path(__package__, full_path.name) as path:
           with open(path, "w") as f:
             yaml.dump(state, f, sort_keys=False, default_flow_style=False)
       except:
